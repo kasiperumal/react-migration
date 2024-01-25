@@ -1,23 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import AjaxRequests from "./components/AjaxRequests";
+import Animation from "./components/Animation";
+import ConditionalRendering from "./components/ConditionalRendering";
+import EventHandling from "./components/EventHandling";
+import FormHandling from "./components/FormHandling";
+import RenderingLists from "./components/RenderingLists";
+import DomManipulation from "./components/DomManipulation";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <h1>React Sample Project</h1>
+      <DomManipulation />
+      <EventHandling />
+      <AjaxRequests />
+      <RenderingLists />
+      <FormHandling />
+      <ConditionalRendering />
+      <Animation />
     </div>
   );
 }
